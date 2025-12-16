@@ -31,4 +31,6 @@ executable advent-of-code
                       Exercises.Day1.Test
                       Exercises.Day2.Lib
                       Exercises.Day2.Test
+                      Exercises.Day3.Lib
+                      Exercises.Day3.Test
     default-language: GHC2021
