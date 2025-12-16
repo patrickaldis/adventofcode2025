@@ -26,6 +26,9 @@ executable advent-of-code
                       text
     hs-source-dirs:   src
     main-is:          Main.hs
-    other-modules:    Exercises.Day1.Lib
+    other-modules:    
+                      Exercises.Day1.Lib
                       Exercises.Day1.Test
+                      Exercises.Day2.Lib
+                      Exercises.Day2.Test
     default-language: GHC2021
