@@ -23,7 +23,8 @@ executable advent-of-code
                       tasty-golden,
                       tasty-hunit,
                       megaparsec,
-                      text
+                      text,
+                      massiv
     hs-source-dirs:   src
     main-is:          Main.hs
     other-modules:    
@@ -33,4 +34,6 @@ executable advent-of-code
                       Exercises.Day2.Test
                       Exercises.Day3.Lib
                       Exercises.Day3.Test
+                      Exercises.Day4.Lib
+                      Exercises.Day4.Test
     default-language: GHC2021

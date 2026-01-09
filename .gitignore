@@ -1,6 +1,7 @@
 Haskell/dist-newstyle
 **/input.txt
 .direnv/nix-profile-.809261.7c815e513adb
-Rust/AdventOfCode/target
+Rust/advent_of_code/target
 dist-newstyle
 .direnv
+Rust/advent_of_code/target/debug/deps/advent_of_code-87a1a557231f487b
