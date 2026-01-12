@@ -14,22 +14,27 @@ day4 =
             "Unit Tests"
             [ testCase
                 "getLocations"
-                (13
-                    @=? getLocations
-                        ( fromJust
-                            ( fromListsM
-                                Seq
-                                [ [True, True, True, False, True, False, True, False, True, True]
-                                , [True, True, True, True, True, False, True, False, True, True]
-                                , [True, False, True, True, True, True, False, False, True, False]
-                                , [True, True, False, True, True, True, True, False, True, True]
-                                , [False, True, True, True, True, True, True, True, False, True]
-                                , [False, True, False, True, False, True, False, True, True, True]
-                                , [True, False, True, True, True, False, True, True, True, True]
-                                , [False, True, True, True, True, True, True, True, True, False]
-                                , [True, False, True, False, True, True, True, False, True, False]
-                                ] ::
-                                Maybe (Array B Ix2 Bool)
+                ( 13
+                    @=? Data.Massiv.Array.sum
+                        ( Data.Massiv.Array.map
+                            fromEnum
+                            ( getLocations
+                                ( fromJust
+                                    ( fromListsM
+                                        Seq
+                                        [ [True, True, True, False, True, False, True, False, True, True]
+                                        , [True, True, True, True, True, False, True, False, True, True]
+                                        , [True, False, True, True, True, True, False, False, True, False]
+                                        , [True, True, False, True, True, True, True, False, True, True]
+                                        , [False, True, True, True, True, True, True, True, False, True]
+                                        , [False, True, False, True, False, True, False, True, True, True]
+                                        , [True, False, True, True, True, False, True, True, True, True]
+                                        , [False, True, True, True, True, True, True, True, True, False]
+                                        , [True, False, True, False, True, True, True, False, True, False]
+                                        ] ::
+                                        Maybe (Array B Ix2 Bool)
+                                    )
+                                )
                             )
                         )
                 )
