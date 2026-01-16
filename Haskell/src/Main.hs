@@ -6,6 +6,7 @@ import Exercises.Day2.Test
 import Exercises.Day3.Test (day3)
 import Exercises.Day4.Test (day4)
 import Exercises.Day5.Test
+import Exercises.Day6.Test
 
 main :: IO ()
 main = defaultMain tests
@@ -18,5 +19,6 @@ tests =
     day2,
     day3,
     day4,
-    day5
+    day5,
+    day6
     ]
